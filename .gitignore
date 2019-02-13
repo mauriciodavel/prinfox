@@ -23,3 +23,8 @@
 hs_err_pid*
 /build/
 /nbproject/private/
+/PuzzlePieces/nbproject/private/
+/PuzzlePieces/build/
+/PuzzlePieces/dist/
+/GUIFormExamples/nbproject/private/
+/GUIFormExamples/build/
