@@ -121,11 +121,11 @@ public class TelaOs extends javax.swing.JInternalFrame {
             } else {
                 JOptionPane.showMessageDialog(null, "Ordem de Serviço não cadastrada!");
             }
-        } catch (com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException e) {
+        } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "OS inválida!");
             //System.out.println(e);
-        } catch (Exception e2) {
-            JOptionPane.showMessageDialog(null, e2);
+        //} catch (Exception e2) {
+        //    JOptionPane.showMessageDialog(null, e2);
         }
     }
     

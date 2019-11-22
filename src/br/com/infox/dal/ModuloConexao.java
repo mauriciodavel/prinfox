@@ -14,9 +14,14 @@ public class ModuloConexao {
         // a linha abaixo chama o driver importado de conexão
         String driver = "com.mysql.jdbc.Driver";
         // Armazenando informações referente ao banco de dados
-        String url = "jdbc:mysql://localhost:3306/dbinfox";
-        String user = "root";
-        String password = "";
+        String url = "jdbc:mysql://mysqlsenai.mysql.database.azure.com:3306/dbinfox?useTimezone=true&serverTimezone=UTC";
+        String user = "joao@mysqlsenai";
+        String password = "Passw0rd";
+        
+        //String url = "jdbc:mysql://localhost:3306/dbinfox";
+        //String user = "root";
+        //String password = "";
+        
         // Estabelecendo a conexão com o banco
         try {
             Class.forName(driver);
