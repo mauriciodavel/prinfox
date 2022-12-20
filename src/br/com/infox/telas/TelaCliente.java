@@ -38,7 +38,7 @@ public class TelaCliente extends javax.swing.JInternalFrame {
             // validação dos campos obrigatórios
             if ((txtCliNome.getText().isEmpty()) || (txtCliFixo.getText().isEmpty()) || (txtCliCel.getText().isEmpty()) || (txtCliCep.getText().isEmpty())) {
                 JOptionPane.showMessageDialog(null, "Campo de preenchimento obrigatório está em branco!");
-
+                btnAdicionar.setVisible(false);
             } else {
 
                 // a linha abaixo atualiza a tabela de usuário com os dados do formulário
@@ -108,7 +108,7 @@ public class TelaCliente extends javax.swing.JInternalFrame {
         txtCliCep.setText(tblCliNome.getModel().getValueAt(setar, 11).toString());
         
         // A LINHA ABAIXO DESABILITA O BOTÃO ADICIONAR PARA QUE O CADASTRO NÃO SEJA DUPLICADO
-        btnAdicionar.setEnabled(false);
+        btnAdicionar.setEnabled(true);
                         
     }
         

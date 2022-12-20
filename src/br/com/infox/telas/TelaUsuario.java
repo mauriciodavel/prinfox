@@ -1,8 +1,10 @@
 package br.com.infox.telas;
 // Aula 13
 
+import br.com.infox.controller.UsuarioController;
 import java.sql.*;
 import br.com.infox.dal.ModuloConexao;
+import br.com.infox.entities.Usuario;
 import javax.swing.JOptionPane;
 
 public class TelaUsuario extends javax.swing.JInternalFrame {
@@ -54,6 +56,20 @@ public class TelaUsuario extends javax.swing.JInternalFrame {
 // Método para adicionar usuários (botão adicionar)
 
     private void adicionar() {
+//        
+//        Usuario u = new Usuario();
+//        u.setId( Integer.parseInt( txtUsuId.getText()) );
+//        u.setLogin(txtUsuLogin.getText());
+//        u.setPerfil(cboUsuPerfil.getSelectedItem().toString());
+//        u.setFone(txtUsuFone.getText());
+//        u.setSenha(txtUsuSenha.getText());
+//        u.setUsuario(txtUsuNome.getText());
+//        
+//        UsuarioController controller = new UsuarioController();
+//        
+//        controller.Cadastrar(u);
+//        
+//        
         String sql = "insert into tbusuarios(iduser,usuario,fone,login,senha,perfil) values(?,?,?,?,?,?)";
         try {
             pst = conexao.prepareStatement(sql);

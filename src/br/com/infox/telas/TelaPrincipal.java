@@ -249,7 +249,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
             // imprimindo relatório com o framework JasperReport
             try {
                 // usando a classe jasperprint para preparar a impressão do relatório
-                JasperPrint print = JasperFillManager.fillReport("C:/Users/MDAVEL/OneDrive/SENAI/2018-1/DISCIPLINAS/DESENVOLVIMENTO DE SISTEMAS/PROJETO ORDEM DE SERVIÇO/MÓDULO 2 - PROJETO CONTROLE DE OS/REPORTS/clientes.jasper", null, conexao);
+                JasperPrint print = JasperFillManager.fillReport("C:/Program Files/Infox/Reports/clientes.jasper", null, conexao);
                 // a linha abaixo exibe o relatório através da classe JasperViewer
                 JasperViewer.viewReport(print, false);
             } catch (Exception e) {
@@ -268,7 +268,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
             // imprimindo relatório com o framework JasperReport
             try {
                 // usando a classe jasperprint para preparar a impressão do relatório
-                JasperPrint print = JasperFillManager.fillReport("C:/Users/MDAVEL/OneDrive/SENAI/2018-1/DISCIPLINAS/DESENVOLVIMENTO DE SISTEMAS/PROJETO ORDEM DE SERVIÇO/MÓDULO 2 - PROJETO CONTROLE DE OS/REPORTS/report1.jasper", null, conexao);
+                JasperPrint print = JasperFillManager.fillReport("C:/Program Files/Infox/Reports/report1.jasper", null, conexao);
                 // a linha abaixo exibe o relatório através da classe JasperViewer
                 JasperViewer.viewReport(print, false);
             } catch (Exception e) {

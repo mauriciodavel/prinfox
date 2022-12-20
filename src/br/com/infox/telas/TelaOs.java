@@ -380,6 +380,11 @@ public class TelaOs extends javax.swing.JInternalFrame {
 
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder("Cliente"));
 
+        txtCliPesquisar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtCliPesquisarActionPerformed(evt);
+            }
+        });
         txtCliPesquisar.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
                 txtCliPesquisarKeyReleased(evt);
@@ -645,6 +650,10 @@ public class TelaOs extends javax.swing.JInternalFrame {
         // chamando o método para imprimir uma OS
         imprimir_os();
     }//GEN-LAST:event_btnImprimirActionPerformed
+
+    private void txtCliPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCliPesquisarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtCliPesquisarActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
